@@ -1,9 +1,9 @@
 {
   "data": {
     "post": {
-      "id": "60",
-      "title": "consequatur placeat omnis quisquam quia reprehenderit fugit veritatis facere",
-      "body": "asperiores sunt ab assumenda cumque modi velit\nqui esse omnis\nvoluptate et fuga perferendis voluptas\nillo ratione amet aut et omnis"
+      "id": "95",
+      "title": "id minus libero illum nam ad officiis",
+      "body": "earum voluptatem facere provident blanditiis velit laboriosam\npariatur accusamus odio saepe\ncumque dolor qui a dicta ab doloribus consequatur omnis\ncorporis cupiditate eaque assumenda ad nesciunt"
     }
   }
 }
