@@ -1,7 +1,7 @@
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
-  reporter: [['./my-custom-reporter.js'], ['html'], ['list']],
+  reporter: [['./custom_reporter.ts'], ['html'], ['list']],
   testDir: './tests', // Directory where your test files are located
   timeout: 30000,
   expect: {
