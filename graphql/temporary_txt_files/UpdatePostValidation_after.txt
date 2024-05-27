@@ -1,8 +1,8 @@
 {
   "data": {
     "updatePost": {
-      "id": "90",
-      "body": "Mollitia necessitatibus architecto eum."
+      "id": "87",
+      "body": "Sint commodi eligendi id dolor soluta illum corrupti."
     }
   }
 }

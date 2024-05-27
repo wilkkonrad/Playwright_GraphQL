@@ -59,7 +59,9 @@ class MyReporter implements Reporter {
       
       ${this.failsMessage ? `Tests Failed ❌\n${this.failsMessage}` : "👍 All tests passed successfully!"}
           
-      To see the full report, please visit our CI/CD piplene with reporter.`;
+      To see the full report, please visit our CI/CD pipeline with reporter.`;
+      
+    return resultMarkdownMessage;
   }
 }
 
