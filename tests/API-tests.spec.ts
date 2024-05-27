@@ -17,7 +17,7 @@ test.describe('Fetch and validate user post requests', { tag: ['@slow', '@smoke'
     totalCount = await fetchTotalCount(request);
   });
 
-  test.skip('Fetch Single Post by ID from GraphQL API and calculate response times', async ({ request }) => {
+  test('Fetch Single Post by ID from GraphQL API and calculate response times', async ({ request }) => {
     for (let postId = totalCount; postId > 0; postId--) {
       const startTime = performance.now();
 
@@ -53,14 +53,14 @@ test.describe('Fetch and validate user post requests', { tag: ['@slow', '@smoke'
     console.log(`Number of requests with response time greater than or equal to 400ms: ${failedRequestsCount} out of ${totalCount} total requests`);
   });
 
-  test.skip('Create a post mutation and validation', async ({ request }) => {
+  test('Create a post mutation and validation', async ({ request }) => {
     if (typeof totalCount === 'undefined') {
       throw new Error('totalCount is not defined. Ensure the beforeAll hook has executed successfully.');
     }
 
     const newPostId = totalCount + 1;
 
-    const randomTitle = faker.datatype.word();
+    const randomTitle = faker.random.word();
     const randomBody = faker.lorem.sentence();
 
     const response = await request.post('', {
@@ -95,7 +95,7 @@ test.describe('Fetch and validate user post requests', { tag: ['@slow', '@smoke'
 
     const testName = 'UpdatePostValidation';
 
-    const filePathBefore: string = path.join('graphql', 'temporary', `${testName}_before.txt`);
+    const filePathBefore: string = path.join('graphql', 'temporary_txt_files', `${testName}_before.txt`);
     fs.writeFileSync(filePathBefore, JSON.stringify(getSinglePostResponseBefore, null, 2));
 
     const updateResponse = await request.post('', {
@@ -112,7 +112,7 @@ test.describe('Fetch and validate user post requests', { tag: ['@slow', '@smoke'
 
     const updateResponseBody = await updateResponse.json();
 
-    const filePathAfter: string = path.join('graphql', 'temporary', `${testName}_after.txt`);
+    const filePathAfter: string = path.join('graphql', 'temporary_txt_files', `${testName}_after.txt`);
     fs.writeFileSync(filePathAfter, JSON.stringify(updateResponseBody, null, 2));
 
     const fileContentBefore: string = fs.readFileSync(filePathBefore, 'utf-8');
