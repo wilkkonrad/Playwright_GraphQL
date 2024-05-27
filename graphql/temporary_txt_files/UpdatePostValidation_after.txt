@@ -1,0 +1,8 @@
+{
+  "data": {
+    "updatePost": {
+      "id": "60",
+      "body": "Ratione animi culpa asperiores vel et dolore."
+    }
+  }
+}
