@@ -3,4 +3,5 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
-./graphql/temporary_txt_files/
+graphql/temporary_txt_files/UpdatePostValidation_after.txt
+graphql/temporary_txt_files/UpdatePostValidation_before.txt
