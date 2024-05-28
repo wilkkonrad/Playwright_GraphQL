@@ -1,0 +1,278 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\wilkk\\Desktop\\Playwright_GraphQL\\Playwright_GraphQL-\\playwright.config.ts",
+    "rootDir": "C:/Users/wilkk/Desktop/Playwright_GraphQL/Playwright_GraphQL-/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "C:\\Users\\wilkk\\Desktop\\Playwright_GraphQL\\Playwright_GraphQL-\\my-custom-reporter.ts",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/wilkk/Desktop/Playwright_GraphQL/Playwright_GraphQL-/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/wilkk/Desktop/Playwright_GraphQL/Playwright_GraphQL-/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.44.1",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "API-tests.spec.ts",
+      "file": "API-tests.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Fetch and validate user post requests",
+          "file": "API-tests.spec.ts",
+          "line": 10,
+          "column": 15,
+          "specs": [
+            {
+              "title": "Fetch Single Post by ID from GraphQL API and calculate response times",
+              "ok": true,
+              "tags": [
+                "slow",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 23948,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Failed request 1: Request with postId 100 had response time \u001b[31m409.58 ms\u001b[0m, which is greater than or equal to \u001b[32m400 ms\u001b[0m.\n"
+                        },
+                        {
+                          "text": "Failed request 2: Request with postId 99 had response time \u001b[31m411.78 ms\u001b[0m, which is greater than or equal to \u001b[32m400 ms\u001b[0m.\n"
+                        },
+                        {
+                          "text": "Failed request 3: Request with postId 96 had response time \u001b[31m408.53 ms\u001b[0m, which is greater than or equal to \u001b[32m400 ms\u001b[0m.\n"
+                        },
+                        {
+                          "text": "Failed request 4: Request with postId 94 had response time \u001b[31m410.46 ms\u001b[0m, which is greater than or equal to \u001b[32m400 ms\u001b[0m.\n"
+                        },
+                        {
+                          "text": "Failed request 5: Request with postId 90 had response time \u001b[31m462.46 ms\u001b[0m, which is greater than or equal to \u001b[32m400 ms\u001b[0m.\n"
+                        },
+                        {
+                          "text": "Failed request 6: Request with postId 80 had response time \u001b[31m405.52 ms\u001b[0m, which is greater than or equal to \u001b[32m400 ms\u001b[0m.\n"
+                        },
+                        {
+                          "text": "Failed request 7: Request with postId 67 had response time \u001b[31m418.27 ms\u001b[0m, which is greater than or equal to \u001b[32m400 ms\u001b[0m.\n"
+                        },
+                        {
+                          "text": "Failed request 8: Request with postId 52 had response time \u001b[31m415.78 ms\u001b[0m, which is greater than or equal to \u001b[32m400 ms\u001b[0m.\n"
+                        },
+                        {
+                          "text": "Failed request 9: Request with postId 42 had response time \u001b[31m401.54 ms\u001b[0m, which is greater than or equal to \u001b[32m400 ms\u001b[0m.\n"
+                        },
+                        {
+                          "text": "Failed request 10: Request with postId 40 had response time \u001b[31m707.33 ms\u001b[0m, which is greater than or equal to \u001b[32m400 ms\u001b[0m.\n"
+                        },
+                        {
+                          "text": "Failed request 11: Request with postId 28 had response time \u001b[31m405.26 ms\u001b[0m, which is greater than or equal to \u001b[32m400 ms\u001b[0m.\n"
+                        },
+                        {
+                          "text": "Failed request 12: Request with postId 24 had response time \u001b[31m408.97 ms\u001b[0m, which is greater than or equal to \u001b[32m400 ms\u001b[0m.\n"
+                        },
+                        {
+                          "text": "Failed request 13: Request with postId 3 had response time \u001b[31m454.10 ms\u001b[0m, which is greater than or equal to \u001b[32m400 ms\u001b[0m.\n"
+                        },
+                        {
+                          "text": "Average response time for fetching single post: 232.37 ms\n"
+                        },
+                        {
+                          "text": "Number of requests with response time greater than or equal to 400ms: 13 out of 100 total requests\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-05-28T17:14:03.147Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "029194a3cab172db60b3-87b49e3ff4c03e712b20",
+              "file": "API-tests.spec.ts",
+              "line": 20,
+              "column": 3
+            },
+            {
+              "title": "Create a post mutation and validation",
+              "ok": true,
+              "tags": [
+                "slow",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 228,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-05-28T17:14:27.587Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "029194a3cab172db60b3-a9849f29929488d9b1db",
+              "file": "API-tests.spec.ts",
+              "line": 57,
+              "column": 3
+            },
+            {
+              "title": "Update a post mutation and validation",
+              "ok": true,
+              "tags": [
+                "slow",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 632,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Deprecation Warning: faker.random.number is now located in faker.datatype.number\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-05-28T17:14:27.817Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "029194a3cab172db60b3-8082c70cabee1a8ff9a1",
+              "file": "API-tests.spec.ts",
+              "line": 88,
+              "column": 3
+            },
+            {
+              "title": "Delete a post mutation and validation",
+              "ok": true,
+              "tags": [
+                "slow",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 1017,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-05-28T17:14:28.452Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "029194a3cab172db60b3-96b2ded3c426772ed78c",
+              "file": "API-tests.spec.ts",
+              "line": 131,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-05-28T17:14:01.384Z",
+    "duration": 28102.482,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -18,6 +18,7 @@
   },
   "scripts": {},
   "dependencies": {
+    "@estruyf/github-actions-reporter": "^1.7.0",
     "faker": "^5.5.3",
     "graphql": "^16.8.1",
     "graphql-request": "^7.0.1",

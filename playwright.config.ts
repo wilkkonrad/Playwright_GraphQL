@@ -2,8 +2,14 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests', 
-  reporter: [['./my-custom-reporter.ts'], ['html'], ['list']],
-    expect: {
+  reporter: [
+    ['@estruyf/github-actions-reporter', {
+      title: 'My custom title',
+      useDetails: true,
+      showError: true
+    }]
+  ],  
+  expect: {
     timeout: 5000
   },
   fullyParallel: true, 

@@ -1,8 +1,8 @@
 {
   "data": {
     "updatePost": {
-      "id": "39",
-      "body": "Ducimus labore voluptas deserunt et quidem ut doloribus voluptatem."
+      "id": "23",
+      "body": "Eveniet ut est."
     }
   }
 }

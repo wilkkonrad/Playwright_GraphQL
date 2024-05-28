@@ -17,8 +17,10 @@ jobs:
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
+    - name: Install Reporter
+      run: npm install @estruyf/github-actions-reporter
     - name: Run Playwright tests
-      run: npx playwright test
+      run: npx playwright test --reporter='@estruyf/github-actions-reporter'
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
