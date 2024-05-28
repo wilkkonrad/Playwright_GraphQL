@@ -16,25 +16,19 @@ This repository contains a suite of Playwright tests designed to validate the fu
 
 ## Setup
 
-1. Clone the repository:
-   \```bash
-   git clone <repository-url>
-   cd <repository-directory>
-   \```
-
-2. Install dependencies:
-   \```bash
+1. Install dependencies:
+   ```bash
    npm install
-   \```
+   ```
 
 3. Ensure you have a running instance of the GraphQL API to test against.
 
 ## Running the Tests
 
 To run the tests, use the following command:
-\```bash
+```bash
 npx playwright test
-\```
+```
 
 The tests are tagged with `@slow` and `@smoke` to allow for selective execution.
 
@@ -78,5 +72,3 @@ This test deletes a post using the `DeletePost` mutation and validates that the 
 ## Logging
 
 During the tests, response times and failed requests are logged to the console for performance analysis.
-
-\```
