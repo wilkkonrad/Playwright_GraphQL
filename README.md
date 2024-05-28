@@ -13,6 +13,7 @@ This repository contains a suite of Playwright tests designed to validate the fu
   - [Delete a Post](#delete-a-post)
 - [Helper Functions](#helper-functions)
 - [Schema Definitions](#schema-definitions)
+- [CI/CD](#CI/CD)
 
 ## Setup
 
@@ -72,3 +73,10 @@ This test deletes a post using the `DeletePost` mutation and validates that the 
 ## Logging
 
 During the tests, response times and failed requests are logged to the console for performance analysis.
+
+## CI/CD
+
+Custom playwright reporter by [@estruyf](https://github.com/estruyf/playwright-github-actions-reporter)
+
+![obraz](https://github.com/wilkkonrad/Playwright_GraphQL/assets/110995167/c7e41208-3d8e-412d-8998-aea6f75928d1)
+
