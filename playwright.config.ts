@@ -1,18 +1,18 @@
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
-  testDir: './tests', // Directory where your test files are located
-  expect: {
+  testDir: './tests', 
+  reporter: [['./my-custom-reporter.ts'], ['html'], ['list']],
+    expect: {
     timeout: 5000
   },
-  fullyParallel: true, // Enable parallel execution
-  workers: 8, // Adjust the number of workers based on your CPU cores
+  fullyParallel: true, 
+  workers: 8, 
   use: {
     headless: true,
-    baseURL: 'https://graphqlzero.almansi.me/api'
-    // Other shared context options
+    baseURL: 'https://graphqlzero.almansi.me/api', 
+
   },
-  // Configure test project or add multiple projects for different browsers
   projects: [
     {
       name: 'chromium',

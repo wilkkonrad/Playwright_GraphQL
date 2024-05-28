@@ -5,3 +5,5 @@ node_modules/
 /playwright/.cache/
 graphql/temporary_txt_files/UpdatePostValidation_after.txt
 graphql/temporary_txt_files/UpdatePostValidation_before.txt
+graphql/temporary_txt_files/UpdatePostValidation_after.txt
+graphql/temporary_txt_files/UpdatePostValidation_before.txt
