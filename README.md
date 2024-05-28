@@ -46,6 +46,10 @@ npx playwright test
 
 The tests are tagged with `@slow` and `@smoke` to allow for selective execution.
 
+```bash
+npx playwright test --grep @smoke
+``` 
+
 ## Test Descriptions
 
 ### Fetch Single Post by ID
