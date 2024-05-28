@@ -27,8 +27,15 @@ This repository contains a suite of Playwright tests designed to validate the fu
    ```bash
    npm install faker
    ```
+   ```bash
+   npm install @estruyf/github-actions-reporter
+   ```
 
 3. Ensure you have a running instance of the GraphQL API to test against.
+
+   ```bash
+   https://graphqlzero.almansi.me/api
+   ```
 
 ## Running the Tests
 
