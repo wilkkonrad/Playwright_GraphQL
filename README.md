@@ -1,4 +1,3 @@
-\```markdown
 # GraphQL API Tests
 
 This repository contains a suite of Playwright tests designed to validate the functionality of a GraphQL API. The tests cover various operations, including fetching posts, creating, updating, and deleting posts. The tests are written in TypeScript and use the Playwright framework.
@@ -80,11 +79,4 @@ This test deletes a post using the `DeletePost` mutation and validates that the 
 
 During the tests, response times and failed requests are logged to the console for performance analysis.
 
-## Contact
-
-For any issues or questions, please open an issue on GitHub or contact the repository maintainer.
-
----
-
-Feel free to copy and paste this README file into your GitHub repository. Adjust the `<repository-url>` and other placeholders as necessary.
 \```
