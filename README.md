@@ -89,6 +89,14 @@ During the tests, response times and failed requests are logged to the console f
 
 ## CI/CD
 
+Tests run automatically on PR and Push
+```bash
+push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+```
+
 Custom playwright reporter by [@estruyf](https://github.com/estruyf/playwright-github-actions-reporter)
 
 ![obraz](https://github.com/wilkkonrad/Playwright_GraphQL/assets/110995167/c7e41208-3d8e-412d-8998-aea6f75928d1)
