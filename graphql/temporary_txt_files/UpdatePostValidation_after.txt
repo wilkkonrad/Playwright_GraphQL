@@ -1,8 +1,8 @@
 {
   "data": {
     "updatePost": {
-      "id": "95",
-      "body": "Voluptas facilis repudiandae animi qui dolores."
+      "id": "68",
+      "body": "Labore sint dicta autem mollitia."
     }
   }
 }
