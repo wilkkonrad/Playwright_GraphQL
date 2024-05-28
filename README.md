@@ -80,4 +80,11 @@ This test deletes a post using the `DeletePost` mutation and validates that the 
 
 During the tests, response times and failed requests are logged to the console for performance analysis.
 
+## Contact
+
+For any issues or questions, please open an issue on GitHub or contact the repository maintainer.
+
+---
+
+Feel free to copy and paste this README file into your GitHub repository. Adjust the `<repository-url>` and other placeholders as necessary.
 \```
