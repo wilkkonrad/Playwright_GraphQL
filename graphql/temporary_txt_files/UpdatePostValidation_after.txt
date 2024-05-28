@@ -1,8 +1,8 @@
 {
   "data": {
     "updatePost": {
-      "id": "23",
-      "body": "Eveniet ut est."
+      "id": "13",
+      "body": "Eum quidem ea."
     }
   }
 }

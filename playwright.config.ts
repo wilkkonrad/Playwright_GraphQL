@@ -2,13 +2,7 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests', 
-  reporter: [
-    ['@estruyf/github-actions-reporter', {
-      title: 'My custom title',
-      useDetails: true,
-      showError: true
-    }]
-  ],  
+  reporter: 'line',
   expect: {
     timeout: 5000
   },
