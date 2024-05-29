@@ -10,13 +10,17 @@
   "author": "kondi7 <wilkkonrad98@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@graphql-codegen/cli": "^5.0.2",
+    "@graphql-codegen/cli": "5.0.2",
+    "@graphql-codegen/client-preset": "4.2.6",
+    "@graphql-codegen/introspection": "4.0.3",
     "@playwright/test": "^1.44.1",
     "@types/faker": "^6.6.9",
     "@types/node": "^20.12.12",
     "typescript": "^5.4.5"
   },
-  "scripts": {},
+  "scripts": {
+    "codegen": "graphql-codegen --config codegen.ts"
+  },
   "dependencies": {
     "@estruyf/github-actions-reporter": "^1.7.0",
     "faker": "^5.5.3",
