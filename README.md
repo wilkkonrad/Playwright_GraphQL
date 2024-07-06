@@ -93,7 +93,7 @@ During the tests, response times and failed requests are logged to the console f
 
 ## CI/CD
 
-Tests run automatically on PR and Push
+Tests run automatically on PR
 ```bash
 push:
     branches: [ main, master ]
